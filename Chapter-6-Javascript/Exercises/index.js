@@ -1,4 +1,3 @@
-// Get references to input fields and elements
 const costInput = document.getElementById('costPerLiter');
 const litersInput = document.getElementById('liters');
 const calculateBtn = document.getElementById('calculateBtn');
