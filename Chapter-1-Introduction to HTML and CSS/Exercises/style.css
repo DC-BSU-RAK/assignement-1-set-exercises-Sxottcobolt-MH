@@ -1,0 +1,121 @@
+@font-face {
+    font-family: outfit;
+    src: url(./assets/fonts/outfit/static/Outfit-Regular.ttf);
+}
+
+@font-face {
+    font-family: youngserif;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: outfit;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul,
+ol {
+    padding-left: 20px;
+}
+
+body {
+    background-color:  hsl(37, 72%, 17%);
+}
+
+h1, 
+h2 {
+    font-family: youngserif;
+    color:hsl(51, 100%, 51%);
+    letter-spacing: 0.05rem;
+}
+
+p,
+li {
+    line-height: 1.6;
+    color: hsl(0, 0%, 0%);
+}
+
+li {
+    margin-top: 0.5rem;
+}
+
+.container {
+    max-width: 900px;
+    margin-inline: auto;
+    background-color: #a07142;
+}
+
+.container div:not(first-child) {
+    padding: 1.5rem;
+}
+
+.banner h1 {
+    margin-bottom: 1rem;
+}
+
+.banner article {
+    background-color: hsl(42, 40%, 57%);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.banner article h3 {
+    color: hsl(96, 58%, 51%);
+    margin-bottom: 0.5rem;
+}
+
+.instructions {
+    border-top: 1px solid hsl(0, 0%, 100%);
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+}
+
+.nutrition-steps .value {
+    margin-bottom: 1rem;
+}
+
+.nutrition-steps .item {
+    padding: 0.75rem 2rem;
+    display: flex;
+    transition: all 200ms ease;
+    border-bottom: 1px solid hsl(0, 0%, 0%);
+}
+
+.nutrition-table .item:last-child {
+    border-bottom: 0;
+}
+
+.nutrition-table .item p:nth-child(2){
+    color: hsl(48, 90%, 41%);
+    font-weight: 700;
+}
+
+.nutrition-table .item > * {
+    width: 100px;
+    margin-right: auto;
+}
+
+
+
+@media (min-width: 768px) {
+    .container {
+        margin: 5px auto 0;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+        color: hsl(45, 100%, 50%);
+    }
+
+    img {
+        border-radius: 1rem;
+    }
+}
